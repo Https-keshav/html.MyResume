@@ -1,0 +1,117 @@
+/* body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: bisque;
+}
+img{
+    float: left;
+    padding-right: 20px;
+}
+.contacts{
+    margin-right: 100px;
+}
+h1{
+    background-color: burlywood;
+}
+.contact li{
+    list-style: none;
+} */
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.contact img {
+    width: 18px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 15px;
+}
+
+/* Main Content */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sections */
+.skills, .workEx, .education, .language {
+    background: beige;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile {
+        text-align: center;
+    }
+
+    .contact ul {
+        padding: 0;
+    }
+
+    .contact li {
+        font-size: 14px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-img {
+        width: 100px;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact li {
+        font-size: 12px;
+    }
+}
